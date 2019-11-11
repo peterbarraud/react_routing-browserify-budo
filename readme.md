@@ -17,3 +17,7 @@ And try the different routes.
 
 Super straightforward
 
+And what's more, switch the `main-lazy-load.js` to `main.js` to lazy load components.
+
+All your `React routing` sample in one place
+
