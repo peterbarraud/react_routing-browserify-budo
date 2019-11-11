@@ -1,0 +1,45 @@
+{
+  "name": "rapo-browserify-budo-babelify",
+  "version": "1.0.0",
+  "description": "A Rapid Prototyping project for Browserify Budo and Babelify for Presets",
+  "main": "entry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "budo index.js --live --open -- -t [ babelify --presets [ @babel/preset-env @babel/preset-react ] ]",
+    "build": "node scripts/build && html-dist --config ./scripts/html-dist.config.js --input index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterbarraud/rapo-browserify-budo-babelify.git"
+  },
+  "keywords": [
+    "browserify",
+    "budo",
+    "babelify",
+    "es2015",
+    "es2017"
+  ],
+  "author": "@gapeterb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterbarraud/rapo-browserify-budo-babelify/issues"
+  },
+  "homepage": "https://github.com/peterbarraud/rapo-browserify-budo-babelify#readme",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "babelify": "^10.0.0",
+    "browserify": "^16.2.3",
+    "budo": "^11.6.1",
+    "html-dist": "^1.0.1",
+    "rimraf": "^2.6.3",
+    "uglifycss": "0.0.29",
+    "uglifyify": "^5.0.1"
+  },
+  "dependencies": {
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-router-dom": "^5.1.2"
+  }
+}
